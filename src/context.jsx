@@ -25,8 +25,15 @@ const AppProvider = ({ children }) => {
         dispatch({ type: "CLEAR" });
     };
 
-    const add = () => {
-        dispatch({type: "ADD"})
+    const add = (id) => {
+        dispatch({type: "ADD", payload: id})
+    }
+    const dec = (id) => {
+        dispatch({type: "DEC", payload: id})
+    }
+
+    const rem = (id) => {
+        dispatch({type: "REMOVE", payload: id})
     }
 
 
@@ -37,7 +44,9 @@ const AppProvider = ({ children }) => {
         <AppContext.Provider value={{
             ...state,
             clearCart,
-            add
+            add,
+            dec,
+            rem
         }}>
             {children}
         </AppContext.Provider>
