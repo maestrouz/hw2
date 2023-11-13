@@ -29,7 +29,18 @@ const reducer = (state, action) => {
         return {...state, cart: filtredItem}
     }
     if (action.type === "TOTAL") {
-        
+        let { total, amount } = state.cart.reduce((ctotal, citem) => {
+            const { price, amount } = citem;
+            const itemTotal = price * amount;
+            ctotal.total += itemTotal;
+            ctotal.amount += amount;
+            return ctotal
+        }, {
+            total: 0,
+            amount:0
+            
+        })
+        return {...state, total, amount}
     }
 
 }

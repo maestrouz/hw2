@@ -5,7 +5,7 @@ import { useGlobalContext } from './context'
 
 function App() {
 
-  const { amount, clearCart } = useGlobalContext();
+  const { amount, clearCart, total } = useGlobalContext();
 
   return (
     <>
@@ -15,6 +15,8 @@ function App() {
       <Carts />
 
       <button onClick={() => clearCart()}>clealAll</button>
+
+      <p>total price { total}</p>
         
     </>
   )
