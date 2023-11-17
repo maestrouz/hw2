@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "service",
+        path: "/service",
         element: <Service />,
       },
 ]);

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Ubuntu&display=swap');
+
+
+.navbar{
+    background: grey;
+}
+
+ul{
+    margin-top: 50px;
+    margin-left: 430px;
+    width: 800px;
+    display: flex;
+    font-size: 24px;
+    list-style: none;
+    gap: 70px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family: ubuntu;
+
+}
+
+h2{
+    font-family: ubuntu;
+    
+}

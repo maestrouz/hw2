@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Ubuntu&display=swap');
+
+
+.home{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background: dimgray;
+    font-family: ubuntu;
+    font-size: 22px;
+}
