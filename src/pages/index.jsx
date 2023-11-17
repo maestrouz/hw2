@@ -1,5 +1,5 @@
-import { default as About } from './About';
-import { default as Contact } from './Contact';
-import { default as Home } from './Home';
-import { default as Error } from './Error';
-import { default as Service } from './Service';
+export { default as About } from './About';
+export { default as Contact } from './Contact';
+export { default as Home } from './Home';
+export { default as Error } from './Error';
+export { default as Service } from './Service';
